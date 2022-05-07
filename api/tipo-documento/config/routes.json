@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tipo-documentos",
+      "handler": "tipo-documento.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipo-documentos/count",
+      "handler": "tipo-documento.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipo-documentos/:id",
+      "handler": "tipo-documento.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tipo-documentos",
+      "handler": "tipo-documento.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tipo-documentos/:id",
+      "handler": "tipo-documento.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tipo-documentos/:id",
+      "handler": "tipo-documento.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

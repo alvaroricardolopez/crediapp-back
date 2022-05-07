@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/documentos-de-solicitud-de-creditos",
+      "handler": "documentos-de-solicitud-de-credito.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/documentos-de-solicitud-de-creditos/count",
+      "handler": "documentos-de-solicitud-de-credito.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/documentos-de-solicitud-de-creditos/:id",
+      "handler": "documentos-de-solicitud-de-credito.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/documentos-de-solicitud-de-creditos",
+      "handler": "documentos-de-solicitud-de-credito.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/documentos-de-solicitud-de-creditos/:id",
+      "handler": "documentos-de-solicitud-de-credito.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/documentos-de-solicitud-de-creditos/:id",
+      "handler": "documentos-de-solicitud-de-credito.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

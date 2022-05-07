@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sucursals",
+      "handler": "sucursal.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sucursals/count",
+      "handler": "sucursal.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sucursals/:id",
+      "handler": "sucursal.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sucursals",
+      "handler": "sucursal.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sucursals/:id",
+      "handler": "sucursal.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sucursals/:id",
+      "handler": "sucursal.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

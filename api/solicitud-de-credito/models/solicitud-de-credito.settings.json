@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solicitud_de_creditos",
+  "info": {
+    "name": "Solicitud de Credito",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "condicion": {
+      "type": "enumeration",
+      "enum": [
+        "Enviado",
+        "Procesando",
+        "Terminado"
+      ],
+      "required": true
+    },
+    "observacion": {
+      "type": "text",
+      "required": true
+    },
+    "monto_solicitado": {
+      "type": "biginteger",
+      "required": true
+    },
+    "tipo_de_credito": {
+      "model": "tipo-de-credito",
+      "via": "solicitud_de_creditos"
+    },
+    "cliente": {
+      "via": "solicitud_de_creditos",
+      "model": "clientes"
+    },
+    "usuario": {
+      "model": "usuario",
+      "via": "solicitud_de_creditos"
+    },
+    "documentos_de_solicitud_de_creditos": {
+      "via": "solicitud_de_credito",
+      "collection": "documentos-de-solicitud-de-credito"
+    }
+  }
+}

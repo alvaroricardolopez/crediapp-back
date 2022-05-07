@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documentos_de_clientes",
+  "info": {
+    "name": "Documentos de clientes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "archivo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "tipo_de_documento": {
+      "model": "tipo-documento",
+      "via": "documentos_de_clientes"
+    },
+    "cliente": {
+      "via": "documentos_de_clientes",
+      "model": "clientes"
+    }
+  }
+}

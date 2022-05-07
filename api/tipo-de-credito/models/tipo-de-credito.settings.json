@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipo_de_creditos",
+  "info": {
+    "name": "Tipo de Credito",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipo": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "boolean"
+    },
+    "Monto_Minimo": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Monto_Maximo": {
+      "type": "biginteger",
+      "required": true
+    },
+    "solicitud_de_creditos": {
+      "via": "tipo_de_credito",
+      "collection": "solicitud-de-credito"
+    }
+  }
+}

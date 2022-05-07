@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/documentos-de-clientes",
+      "handler": "documentos-de-clientes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/documentos-de-clientes/count",
+      "handler": "documentos-de-clientes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/documentos-de-clientes/:id",
+      "handler": "documentos-de-clientes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/documentos-de-clientes",
+      "handler": "documentos-de-clientes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/documentos-de-clientes/:id",
+      "handler": "documentos-de-clientes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/documentos-de-clientes/:id",
+      "handler": "documentos-de-clientes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

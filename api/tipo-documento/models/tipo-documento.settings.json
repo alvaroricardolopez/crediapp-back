@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipo_documentos",
+  "info": {
+    "name": "Tipo de documento",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "fomato": {
+      "type": "enumeration",
+      "enum": [
+        "pdf",
+        "jpg",
+        "jpeg",
+        "png",
+        "xmls"
+      ],
+      "required": true
+    },
+    "Dependencia": {
+      "type": "enumeration",
+      "enum": [
+        "Credito",
+        "Cliente"
+      ],
+      "required": true
+    },
+    "documentos_de_clientes": {
+      "via": "tipo_de_documento",
+      "collection": "documentos-de-clientes"
+    },
+    "documentos_de_solicitud_de_creditos": {
+      "via": "tipo_de_documento",
+      "collection": "documentos-de-solicitud-de-credito"
+    }
+  }
+}

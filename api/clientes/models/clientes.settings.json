@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clientes",
+  "info": {
+    "name": "clientes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombres": {
+      "type": "string",
+      "required": true
+    },
+    "apellidos": {
+      "type": "string",
+      "required": true
+    },
+    "contrasenia": {
+      "type": "password",
+      "required": true
+    },
+    "ciudad": {
+      "type": "string",
+      "required": true
+    },
+    "direccion": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "integer",
+      "required": false
+    },
+    "celular": {
+      "type": "integer",
+      "required": true
+    },
+    "correo": {
+      "type": "email",
+      "required": true
+    },
+    "estado": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "documentos_de_clientes": {
+      "via": "cliente",
+      "collection": "documentos-de-clientes"
+    },
+    "cedula": {
+      "type": "string",
+      "maxLength": 10,
+      "required": true
+    },
+    "solicitud_de_creditos": {
+      "via": "cliente",
+      "collection": "solicitud-de-credito"
+    }
+  }
+}

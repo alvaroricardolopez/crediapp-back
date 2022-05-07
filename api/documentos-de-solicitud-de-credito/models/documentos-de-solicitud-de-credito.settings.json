@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documentos_de_solicitud_de_creditos",
+  "info": {
+    "name": "Documentos de Solicitud de Credito"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "documento": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "tipo_de_documento": {
+      "model": "tipo-documento",
+      "via": "documentos_de_solicitud_de_creditos"
+    },
+    "solicitud_de_credito": {
+      "model": "solicitud-de-credito",
+      "via": "documentos_de_solicitud_de_creditos"
+    }
+  }
+}

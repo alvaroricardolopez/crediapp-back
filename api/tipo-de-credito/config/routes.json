@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tipo-de-creditos",
+      "handler": "tipo-de-credito.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipo-de-creditos/count",
+      "handler": "tipo-de-credito.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipo-de-creditos/:id",
+      "handler": "tipo-de-credito.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tipo-de-creditos",
+      "handler": "tipo-de-credito.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tipo-de-creditos/:id",
+      "handler": "tipo-de-credito.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tipo-de-creditos/:id",
+      "handler": "tipo-de-credito.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

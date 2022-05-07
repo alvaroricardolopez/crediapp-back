@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tipo-de-usuarios",
+      "handler": "tipo-de-usuario.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipo-de-usuarios/count",
+      "handler": "tipo-de-usuario.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipo-de-usuarios/:id",
+      "handler": "tipo-de-usuario.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tipo-de-usuarios",
+      "handler": "tipo-de-usuario.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tipo-de-usuarios/:id",
+      "handler": "tipo-de-usuario.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tipo-de-usuarios/:id",
+      "handler": "tipo-de-usuario.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

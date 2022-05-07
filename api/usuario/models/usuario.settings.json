@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usuarios",
+  "info": {
+    "name": "Usuario",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombres": {
+      "type": "string",
+      "required": true
+    },
+    "apellidos": {
+      "type": "string",
+      "required": true
+    },
+    "cedula": {
+      "type": "integer",
+      "max": 10,
+      "required": true,
+      "unique": true
+    },
+    "telefono": {
+      "type": "integer",
+      "max": 10,
+      "required": true
+    },
+    "estado": {
+      "type": "boolean"
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "contrasenia": {
+      "type": "password"
+    },
+    "tipo_de_usuario": {
+      "model": "tipo-de-usuario"
+    },
+    "sucursal": {
+      "model": "sucursal"
+    },
+    "solicitud_de_creditos": {
+      "via": "usuario",
+      "collection": "solicitud-de-credito"
+    }
+  }
+}
