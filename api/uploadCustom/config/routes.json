@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/uploadfile",
+      "handler": "uploadCustom.uploadCustom",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
