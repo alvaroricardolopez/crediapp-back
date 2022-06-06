@@ -37,33 +37,6 @@ module.exports = {
   updateSettings: resolveControllerMethod('updateSettings'),
   getSettings: resolveControllerMethod('getSettings'),
 
-  async upload(ctx) {
-    const isUploadDisabled = _.get(strapi.plugins, 'upload.config.enabled', true) === false;
-
-    if (isUploadDisabled) {
-      throw strapi.errors.badRequest(null, {
-        errors: [{ id: 'Upload.status.disabled', message: 'File upload is disabled' }],
-      });
-    }
-
-    const {
-      query: { id },
-      request: { files: { files } = {} },
-    } = ctx;
-    const controller = resolveController(ctx);
-
-    if (id && (_.isEmpty(files) || files.size === 0)) {
-      return controller.updateFileInfo(ctx);
-    }
-
-    if (_.isEmpty(files) || files.size === 0) {
-      throw strapi.errors.badRequest(null, {
-        errors: [{ id: 'Upload.status.empty', message: 'Files are empty' }],
-      });
-    }
-
-    await (id ? controller.replaceFile : controller.uploadFiles)(ctx);
-  },
   async uploadC(ctx) {
     const isUploadDisabled = _.get(strapi.plugins, 'upload.config.enabled', true) === false;
 
@@ -90,41 +63,5 @@ module.exports = {
     }
 
     await (id ? controller.replaceFile : controller.uploadFilesC)(ctx);
-  },
-
-  async search(ctx) {
-    const { id } = ctx.params;
-    const model = strapi.getModel('file', 'upload');
-    const entries = await strapi.query('file', 'upload').custom(searchQueries)({
-      id,
-    });
-
-    ctx.body = sanitizeEntity(entries, { model });
-  },
-};
-
-const searchQueries = {
-  bookshelf({ model }) {
-    return ({ id }) => {
-      return model
-        .query(qb => {
-          qb.whereRaw('LOWER(hash) LIKE ?', [`%${id}%`]).orWhereRaw('LOWER(name) LIKE ?', [
-            `%${id}%`,
-          ]);
-        })
-        .fetchAll()
-        .then(results => results.toJSON());
-    };
-  },
-  mongoose({ model }) {
-    return ({ id }) => {
-      const re = new RegExp(id, 'i');
-
-      return model
-        .find({
-          $or: [{ hash: re }, { name: re }],
-        })
-        .lean();
-    };
-  },
+  }
 };
