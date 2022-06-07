@@ -1,0 +1,17 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/custom",
+      "handler": "Upload.uploadC",
+      "config": {
+        "policies": [],
+        "description": "Upload a file",
+        "tag": {
+          "plugin": "upload",
+          "name": "File"
+        }
+      }
+    }
+  ]
+}
