@@ -20,24 +20,12 @@
       "type": "string",
       "required": true
     },
-    "contrasenia": {
-      "type": "password",
-      "required": true
-    },
     "ciudad": {
       "type": "string",
       "required": true
     },
     "direccion": {
       "type": "string",
-      "required": true
-    },
-    "telefono": {
-      "type": "integer",
-      "required": false
-    },
-    "celular": {
-      "type": "integer",
       "required": true
     },
     "correo": {
@@ -61,6 +49,16 @@
     "solicitud_de_creditos": {
       "via": "cliente",
       "collection": "solicitud-de-credito"
+    },
+    "celular": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "contrasenia": {
+      "type": "string",
+      "required": true
     }
   }
 }

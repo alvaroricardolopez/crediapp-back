@@ -519,13 +519,12 @@
           "id",
           "nombres",
           "apellidos",
-          "contrasenia",
           "ciudad",
           "direccion",
-          "celular",
           "correo",
           "estado",
-          "cedula"
+          "cedula",
+          "contrasenia"
         ],
         "properties": {
           "id": {
@@ -537,21 +536,11 @@
           "apellidos": {
             "type": "string"
           },
-          "contrasenia": {
-            "type": "string",
-            "format": "password"
-          },
           "ciudad": {
             "type": "string"
           },
           "direccion": {
             "type": "string"
-          },
-          "telefono": {
-            "type": "integer"
-          },
-          "celular": {
-            "type": "integer"
           },
           "correo": {
             "type": "string"
@@ -647,6 +636,15 @@
                 }
               }
             }
+          },
+          "celular": {
+            "type": "string"
+          },
+          "telefono": {
+            "type": "string"
+          },
+          "contrasenia": {
+            "type": "string"
           }
         }
       },
@@ -654,13 +652,12 @@
         "required": [
           "nombres",
           "apellidos",
-          "contrasenia",
           "ciudad",
           "direccion",
-          "celular",
           "correo",
           "estado",
-          "cedula"
+          "cedula",
+          "contrasenia"
         ],
         "properties": {
           "nombres": {
@@ -669,21 +666,11 @@
           "apellidos": {
             "type": "string"
           },
-          "contrasenia": {
-            "type": "string",
-            "format": "password"
-          },
           "ciudad": {
             "type": "string"
           },
           "direccion": {
             "type": "string"
-          },
-          "telefono": {
-            "type": "integer"
-          },
-          "celular": {
-            "type": "integer"
           },
           "correo": {
             "type": "string"
@@ -707,6 +694,15 @@
             "items": {
               "type": "string"
             }
+          },
+          "celular": {
+            "type": "string"
+          },
+          "telefono": {
+            "type": "string"
+          },
+          "contrasenia": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
