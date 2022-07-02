@@ -712,6 +712,21 @@
               "contrasenia": {
                 "type": "string"
               },
+              "foto": {
+                "type": "string"
+              },
+              "cedula_personal": {
+                "type": "string"
+              },
+              "papaleta_votacion_personal": {
+                "type": "string"
+              },
+              "cedula_conyugue": {
+                "type": "string"
+              },
+              "papeleta_conyugue": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
