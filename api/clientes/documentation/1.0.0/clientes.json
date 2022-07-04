@@ -989,11 +989,11 @@
               "id": {
                 "type": "string"
               },
-              "estado": {
-                "type": "string"
-              },
               "name": {
                 "type": "string"
+              },
+              "estado": {
+                "type": "boolean"
               },
               "created_by": {
                 "type": "string"

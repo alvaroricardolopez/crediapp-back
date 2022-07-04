@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "estado_civils",
   "info": {
-    "name": "Estado Civil"
+    "name": "Estado Civil",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "estado": {
-      "type": "string"
-    },
     "name": {
       "type": "string"
+    },
+    "estado": {
+      "type": "boolean"
     }
   }
 }
