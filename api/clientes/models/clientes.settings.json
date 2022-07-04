@@ -30,7 +30,8 @@
     },
     "correo": {
       "type": "email",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "estado": {
       "type": "boolean",
@@ -109,6 +110,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "estado_civil": {
+      "model": "estado-civil"
     }
   }
 }

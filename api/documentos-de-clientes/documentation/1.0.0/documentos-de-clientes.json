@@ -727,6 +727,9 @@
               "papeleta_conyugue": {
                 "type": "string"
               },
+              "estado_civil": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/estado-civils",
+      "handler": "estado-civil.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/estado-civils/count",
+      "handler": "estado-civil.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/estado-civils/:id",
+      "handler": "estado-civil.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/estado-civils",
+      "handler": "estado-civil.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/estado-civils/:id",
+      "handler": "estado-civil.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/estado-civils/:id",
+      "handler": "estado-civil.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

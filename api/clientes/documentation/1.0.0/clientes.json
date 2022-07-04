@@ -980,6 +980,28 @@
                 "type": "string"
               }
             }
+          },
+          "estado_civil": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "estado": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -1037,6 +1059,9 @@
             "type": "string"
           },
           "contrasenia": {
+            "type": "string"
+          },
+          "estado_civil": {
             "type": "string"
           },
           "created_by": {
