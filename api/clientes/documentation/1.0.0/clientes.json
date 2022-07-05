@@ -995,6 +995,9 @@
               "estado": {
                 "type": "boolean"
               },
+              "tiene_Conyugue": {
+                "type": "boolean"
+              },
               "created_by": {
                 "type": "string"
               },

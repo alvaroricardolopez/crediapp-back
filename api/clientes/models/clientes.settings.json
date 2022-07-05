@@ -45,7 +45,8 @@
     "cedula": {
       "type": "string",
       "maxLength": 10,
-      "required": true
+      "required": true,
+      "unique": true
     },
     "solicitud_de_creditos": {
       "via": "cliente",
