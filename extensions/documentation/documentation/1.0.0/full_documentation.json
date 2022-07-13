@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/05/2022 2:52:56 AM"
+    "x-generation-date": "07/13/2022 2:05:46 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7697,7 +7697,6 @@
                 "id",
                 "fecha",
                 "condicion",
-                "observacion",
                 "monto_solicitado"
               ],
               "properties": {
@@ -8543,7 +8542,6 @@
               "id",
               "fecha",
               "condicion",
-              "observacion",
               "monto_solicitado"
             ],
             "properties": {
@@ -8624,7 +8622,7 @@
           },
           "tiene_Conyugue": {
             "type": "boolean",
-            "default": false
+            "default": true
           }
         }
       },
@@ -8638,7 +8636,7 @@
           },
           "tiene_Conyugue": {
             "type": "boolean",
-            "default": false
+            "default": true
           },
           "created_by": {
             "type": "string"
@@ -8653,7 +8651,6 @@
           "id",
           "fecha",
           "condicion",
-          "observacion",
           "monto_solicitado"
         ],
         "properties": {
@@ -8802,9 +8799,7 @@
             "required": [
               "id",
               "nombres",
-              "apellidos",
-              "cedula",
-              "telefono"
+              "apellidos"
             ],
             "properties": {
               "id": {
@@ -8815,12 +8810,6 @@
               },
               "apellidos": {
                 "type": "string"
-              },
-              "cedula": {
-                "type": "integer"
-              },
-              "telefono": {
-                "type": "integer"
               },
               "estado": {
                 "type": "boolean"
@@ -8842,6 +8831,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "cedula": {
+                "type": "string"
+              },
+              "telefono": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -8885,7 +8880,6 @@
         "required": [
           "fecha",
           "condicion",
-          "observacion",
           "monto_solicitado"
         ],
         "properties": {
@@ -8991,7 +8985,6 @@
                 "id",
                 "fecha",
                 "condicion",
-                "observacion",
                 "monto_solicitado"
               ],
               "properties": {
@@ -9240,9 +9233,7 @@
         "required": [
           "id",
           "nombres",
-          "apellidos",
-          "cedula",
-          "telefono"
+          "apellidos"
         ],
         "properties": {
           "id": {
@@ -9253,12 +9244,6 @@
           },
           "apellidos": {
             "type": "string"
-          },
-          "cedula": {
-            "type": "integer"
-          },
-          "telefono": {
-            "type": "integer"
           },
           "estado": {
             "type": "boolean"
@@ -9318,7 +9303,6 @@
                 "id",
                 "fecha",
                 "condicion",
-                "observacion",
                 "monto_solicitado"
               ],
               "properties": {
@@ -9365,15 +9349,19 @@
                 }
               }
             }
+          },
+          "cedula": {
+            "type": "string"
+          },
+          "telefono": {
+            "type": "string"
           }
         }
       },
       "NewUsuario": {
         "required": [
           "nombres",
-          "apellidos",
-          "cedula",
-          "telefono"
+          "apellidos"
         ],
         "properties": {
           "nombres": {
@@ -9381,12 +9369,6 @@
           },
           "apellidos": {
             "type": "string"
-          },
-          "cedula": {
-            "type": "integer"
-          },
-          "telefono": {
-            "type": "integer"
           },
           "estado": {
             "type": "boolean"
@@ -9409,6 +9391,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "cedula": {
+            "type": "string"
+          },
+          "telefono": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

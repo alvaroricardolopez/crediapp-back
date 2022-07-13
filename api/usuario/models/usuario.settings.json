@@ -20,17 +20,6 @@
       "type": "string",
       "required": true
     },
-    "cedula": {
-      "type": "integer",
-      "max": 10,
-      "required": true,
-      "unique": true
-    },
-    "telefono": {
-      "type": "integer",
-      "max": 10,
-      "required": true
-    },
     "estado": {
       "type": "boolean"
     },
@@ -49,6 +38,12 @@
     "solicitud_de_creditos": {
       "via": "usuario",
       "collection": "solicitud-de-credito"
+    },
+    "cedula": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
     }
   }
 }

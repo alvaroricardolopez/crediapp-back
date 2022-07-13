@@ -532,7 +532,6 @@
           "id",
           "fecha",
           "condicion",
-          "observacion",
           "monto_solicitado"
         ],
         "properties": {
@@ -681,9 +680,7 @@
             "required": [
               "id",
               "nombres",
-              "apellidos",
-              "cedula",
-              "telefono"
+              "apellidos"
             ],
             "properties": {
               "id": {
@@ -694,12 +691,6 @@
               },
               "apellidos": {
                 "type": "string"
-              },
-              "cedula": {
-                "type": "integer"
-              },
-              "telefono": {
-                "type": "integer"
               },
               "estado": {
                 "type": "boolean"
@@ -721,6 +712,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "cedula": {
+                "type": "string"
+              },
+              "telefono": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -764,7 +761,6 @@
         "required": [
           "fecha",
           "condicion",
-          "observacion",
           "monto_solicitado"
         ],
         "properties": {

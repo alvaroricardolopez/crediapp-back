@@ -518,9 +518,7 @@
         "required": [
           "id",
           "nombres",
-          "apellidos",
-          "cedula",
-          "telefono"
+          "apellidos"
         ],
         "properties": {
           "id": {
@@ -531,12 +529,6 @@
           },
           "apellidos": {
             "type": "string"
-          },
-          "cedula": {
-            "type": "integer"
-          },
-          "telefono": {
-            "type": "integer"
           },
           "estado": {
             "type": "boolean"
@@ -596,7 +588,6 @@
                 "id",
                 "fecha",
                 "condicion",
-                "observacion",
                 "monto_solicitado"
               ],
               "properties": {
@@ -643,15 +634,19 @@
                 }
               }
             }
+          },
+          "cedula": {
+            "type": "string"
+          },
+          "telefono": {
+            "type": "string"
           }
         }
       },
       "NewUsuario": {
         "required": [
           "nombres",
-          "apellidos",
-          "cedula",
-          "telefono"
+          "apellidos"
         ],
         "properties": {
           "nombres": {
@@ -659,12 +654,6 @@
           },
           "apellidos": {
             "type": "string"
-          },
-          "cedula": {
-            "type": "integer"
-          },
-          "telefono": {
-            "type": "integer"
           },
           "estado": {
             "type": "boolean"
@@ -687,6 +676,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "cedula": {
+            "type": "string"
+          },
+          "telefono": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

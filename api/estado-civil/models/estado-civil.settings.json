@@ -20,7 +20,7 @@
     },
     "tiene_Conyugue": {
       "type": "boolean",
-      "default": false,
+      "default": true,
       "required": false
     }
   }

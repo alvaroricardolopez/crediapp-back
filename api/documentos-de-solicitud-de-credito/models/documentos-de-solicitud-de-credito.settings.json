@@ -27,8 +27,8 @@
       "via": "documentos_de_solicitud_de_creditos"
     },
     "solicitud_de_credito": {
-      "model": "solicitud-de-credito",
-      "via": "documentos_de_solicitud_de_creditos"
+      "via": "documentos_de_solicitud_de_creditos",
+      "model": "solicitud-de-credito"
     }
   }
 }

@@ -589,7 +589,6 @@
                 "id",
                 "fecha",
                 "condicion",
-                "observacion",
                 "monto_solicitado"
               ],
               "properties": {

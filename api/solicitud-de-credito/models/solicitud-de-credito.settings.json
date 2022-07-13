@@ -27,7 +27,7 @@
     },
     "observacion": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "monto_solicitado": {
       "type": "biginteger",
@@ -42,8 +42,8 @@
       "model": "clientes"
     },
     "usuario": {
-      "model": "usuario",
-      "via": "solicitud_de_creditos"
+      "via": "solicitud_de_creditos",
+      "model": "usuario"
     },
     "documentos_de_solicitud_de_creditos": {
       "via": "solicitud_de_credito",
