@@ -26,9 +26,6 @@
     "user_name": {
       "type": "string"
     },
-    "contrasenia": {
-      "type": "password"
-    },
     "tipo_de_usuario": {
       "model": "tipo-de-usuario"
     },
@@ -40,10 +37,18 @@
       "collection": "solicitud-de-credito"
     },
     "cedula": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "telefono": {
       "type": "string"
+    },
+    "contrasenia": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "email"
     }
   }
 }

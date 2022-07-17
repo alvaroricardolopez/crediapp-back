@@ -518,7 +518,8 @@
         "required": [
           "id",
           "nombres",
-          "apellidos"
+          "apellidos",
+          "cedula"
         ],
         "properties": {
           "id": {
@@ -535,10 +536,6 @@
           },
           "user_name": {
             "type": "string"
-          },
-          "contrasenia": {
-            "type": "string",
-            "format": "password"
           },
           "tipo_de_usuario": {
             "required": [
@@ -640,13 +637,20 @@
           },
           "telefono": {
             "type": "string"
+          },
+          "contrasenia": {
+            "type": "string"
+          },
+          "correo": {
+            "type": "string"
           }
         }
       },
       "NewUsuario": {
         "required": [
           "nombres",
-          "apellidos"
+          "apellidos",
+          "cedula"
         ],
         "properties": {
           "nombres": {
@@ -660,10 +664,6 @@
           },
           "user_name": {
             "type": "string"
-          },
-          "contrasenia": {
-            "type": "string",
-            "format": "password"
           },
           "tipo_de_usuario": {
             "type": "string"
@@ -681,6 +681,12 @@
             "type": "string"
           },
           "telefono": {
+            "type": "string"
+          },
+          "contrasenia": {
+            "type": "string"
+          },
+          "correo": {
             "type": "string"
           },
           "created_by": {

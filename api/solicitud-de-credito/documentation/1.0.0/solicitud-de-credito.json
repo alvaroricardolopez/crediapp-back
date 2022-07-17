@@ -680,7 +680,8 @@
             "required": [
               "id",
               "nombres",
-              "apellidos"
+              "apellidos",
+              "cedula"
             ],
             "properties": {
               "id": {
@@ -696,9 +697,6 @@
                 "type": "boolean"
               },
               "user_name": {
-                "type": "string"
-              },
-              "contrasenia": {
                 "type": "string"
               },
               "tipo_de_usuario": {
@@ -717,6 +715,12 @@
                 "type": "string"
               },
               "telefono": {
+                "type": "string"
+              },
+              "contrasenia": {
+                "type": "string"
+              },
+              "correo": {
                 "type": "string"
               },
               "created_by": {

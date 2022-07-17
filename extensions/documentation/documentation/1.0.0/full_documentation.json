@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/13/2022 2:05:46 PM"
+    "x-generation-date": "07/16/2022 11:30:39 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8799,7 +8799,8 @@
             "required": [
               "id",
               "nombres",
-              "apellidos"
+              "apellidos",
+              "cedula"
             ],
             "properties": {
               "id": {
@@ -8815,9 +8816,6 @@
                 "type": "boolean"
               },
               "user_name": {
-                "type": "string"
-              },
-              "contrasenia": {
                 "type": "string"
               },
               "tipo_de_usuario": {
@@ -8836,6 +8834,12 @@
                 "type": "string"
               },
               "telefono": {
+                "type": "string"
+              },
+              "contrasenia": {
+                "type": "string"
+              },
+              "correo": {
                 "type": "string"
               },
               "created_by": {
@@ -9233,7 +9237,8 @@
         "required": [
           "id",
           "nombres",
-          "apellidos"
+          "apellidos",
+          "cedula"
         ],
         "properties": {
           "id": {
@@ -9250,10 +9255,6 @@
           },
           "user_name": {
             "type": "string"
-          },
-          "contrasenia": {
-            "type": "string",
-            "format": "password"
           },
           "tipo_de_usuario": {
             "required": [
@@ -9355,13 +9356,20 @@
           },
           "telefono": {
             "type": "string"
+          },
+          "contrasenia": {
+            "type": "string"
+          },
+          "correo": {
+            "type": "string"
           }
         }
       },
       "NewUsuario": {
         "required": [
           "nombres",
-          "apellidos"
+          "apellidos",
+          "cedula"
         ],
         "properties": {
           "nombres": {
@@ -9375,10 +9383,6 @@
           },
           "user_name": {
             "type": "string"
-          },
-          "contrasenia": {
-            "type": "string",
-            "format": "password"
           },
           "tipo_de_usuario": {
             "type": "string"
@@ -9396,6 +9400,12 @@
             "type": "string"
           },
           "telefono": {
+            "type": "string"
+          },
+          "contrasenia": {
+            "type": "string"
+          },
+          "correo": {
             "type": "string"
           },
           "created_by": {
